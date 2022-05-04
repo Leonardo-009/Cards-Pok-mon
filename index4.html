@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bunbarsa</title>
+    <link rel="stylesheet" href="">
+
+</head>
+<body>
+    <style>*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-image: url('https://uploads.spiritfanfiction.com/historias/capitulos/202006/pokemon--regiao-de-olympia--reboot-19649940-170620202059.jpg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    }
+    .container{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1200px;
+        flex-wrap: wrap;
+        z-index: 1;
+    }
+    .container .card{
+        position: relative;
+        width: 280px;
+        height: 400px;
+        margin: 30px;
+        box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+        border-radius:  15px;
+        background: rgba(255, 255, 255, 0.1);
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.5);
+        border-left:  1px solid rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(2px);
+    }
+    .container .card .content1{
+        padding: 500px;
+        text-align:  center;
+        transform: translateY(100px);
+        opacity: 0;
+        transition: 0.9s;
+    
+    }
+    .container .card .content2{
+        padding: 300px;
+        text-align:  center;
+        transform: translateY(100px);
+        opacity: 0;
+        transition: 0.9s;
+    
+    }
+    .container .card .content3{
+        padding: 500px;
+        text-align:  center;
+        transform: translateY(100px);
+        opacity: 0;
+        transition: 0.9s;
+    
+    }
+    .container .card:hover .content1{
+        transform: translateY(0px);
+        opacity: 1;
+        background-image: url(https://pa1.narvii.com/6535/4a2a7aba93ec12412130c518593d41d912b2a7aa_hq.gif);
+        background-size: 300px 200px;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    }
+    .container .card:hover .content2{
+        transform: translateY(0px);
+    opacity: 1;
+    background-image: url(https://gifs.eco.br/wp-content/uploads/2022/04/gifs-do-ivysaur-1.gif);
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    }
+    .container .card:hover .content3{
+        transform: translateY(0px);
+        opacity: 1;
+        background-image: url(https://1.bp.blogspot.com/-zm9x6OM-RTU/YGhQEC4hmaI/AAAAAAAAVOo/NYlvcKp_pk4ByZIK4iKBVXNLztTvrPl3wCLcBGAsYHQ/s0/Venusaur.gif);
+        background-size: 200px 200px;
+        background-repeat: no-repeat;
+        background-position: center;
+    
+    }
+    </style>
+    <div class="container">
+        <div class="card">
+            <div class="content1">
+            </div>
+        </div>
+        <div class="card">
+            <div class="content2">
+            </div>
+        </div>
+        <div class="card">
+            <div class="content3">
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".card"), {
+            max: 25,
+            speed: 400
+        });
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+    max: 25,
+    speed: 400,
+    glare: true,
+    "max-glare":0.3,
+});
+    </script>
+</body>
+</html>
